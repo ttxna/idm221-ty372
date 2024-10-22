@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Inter;
+    src: url('..fonts/Inter.ttf');
+    font-optical-sizing: auto;
+    font-weight: 100 900;
+    font-size: normal;
+}
+@font-face {
+    font-family: InterTight;
+    src: url('..fonts/InterTight.ttf');
+    font-optical-sizing: auto;
+    font-weight: 100 900;
+    font-size: normal;
+}
+html{
+    --red: #300;
+}
+
+h1{
+    color: var(--red);
+    font-size: clamp(3rem, 10vm, 5rem);
+}
+h2{
+    font-size: clamp(1.5rem, 5vm, 2.5rem); 
+}
+p{
+    color: var(--red);
+    line-height: 1.4;
+}
+
+html{
+    --font-san-serif: Inter;
+    --font-headings:InterTight, var{Inter};
+}
