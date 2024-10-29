@@ -32,3 +32,11 @@ html{
     --font-san-serif: Inter;
     --font-headings:InterTight, var{Inter};
 }
+
+*{
+    box-sizing: border-box;
+}
+img{
+    height: auto;
+    width: 100%;
+}
