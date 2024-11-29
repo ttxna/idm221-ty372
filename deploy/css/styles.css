@@ -1,12 +1,30 @@
-a {
-    text-decoration: none;
-    color: inherit;
+@font-face {
+    font-family: Inter;
+    src: url('..fonts/Inter.ttf');
+    font-optical-sizing: auto;
+    font-weight: 100 900;
+    font-size: normal;
 }
-
-a:hover {
-    text-decoration: underline;
+@font-face {
+    font-family: InterTight;
+    src: url('..fonts/InterTight.ttf');
+    font-optical-sizing: auto;
+    font-weight: 100 900;
+    font-size: normal;
 }
 
 h1{
-    color: aquamarine;
+    font-size: 2rem;
+}
+
+.header{
+
+}
+
+.h3{
+
+}
+
+.subheader{
+    
 }
