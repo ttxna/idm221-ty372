@@ -1,11 +1,12 @@
 :root{
     --Black: rgba(0, 0, 0, 1);
   --White: rgba(255, 255, 255, 1);
+  --teal: rgba(23, 99, 99, 0);
 }
 
 @font-face {
     font-family: Inter;
-    src: url('..fonts/Inter.ttf');
+    src: url('../fonts/Inter.ttf');
     font-optical-sizing: auto;
     font-weight: 100 900;
     font-size: normal;
@@ -29,13 +30,13 @@ img {
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
-    gap: 10px; /* Space between columns */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px; 
   }
   
   .grid-item img {
-    width: 100%; /* Make images fit the grid cell */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
    
 h1{
@@ -62,3 +63,84 @@ h1{
     height: 1px;
     background-color: black;
 }
+header {
+    padding: 1rem;
+    position: relative;
+  
+    label {
+      cursor: pointer;
+      height: 1.25rem;
+      position: fixed;
+      right: 1rem;
+      top: 1rem;
+      width: 1.625rem;
+      z-index: 1001;
+  
+      span {
+        background-color: #333;
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+  
+        transform-origin: left;
+  
+        &:nth-child(1) {
+          top: 0;
+        }
+  
+        &:nth-child(2) {
+          top: 0.5rem;
+        }
+  
+        &:nth-child(3) {
+          top: 1rem;
+        }
+      }
+    }
+  }
+  
+  nav {
+    background: #f1f1f1;
+    height: 100vh;
+    width: 18.75rem;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 2rem;
+  
+      li {
+        margin-bottom: 1rem;
+  
+        a {
+          color: #333;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Show nav when checkbox is checked */
+  .nav-toggle:checked ~ nav {
+    right: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -2px; /* Fix */
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
