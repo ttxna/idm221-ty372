@@ -1,3 +1,8 @@
+:root{
+    --Black: rgba(0, 0, 0, 1);
+  --White: rgba(255, 255, 255, 1);
+}
+
 @font-face {
     font-family: Inter;
     src: url('..fonts/Inter.ttf');
@@ -16,6 +21,9 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+.hero{
+    max-width: 100%
 }
 
 
@@ -48,4 +56,9 @@ h1{
 
 .subheader{
 
+}
+
+.line{
+    height: 1px;
+    background-color: black;
 }
