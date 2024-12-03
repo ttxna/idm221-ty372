@@ -2,6 +2,7 @@
     --Black: rgba(0, 0, 0, 1);
   --White: rgba(255, 255, 255, 1);
   --teal: rgba(23, 99, 99, 0);
+  --lightcyan: rgba (224, 255, 255);
 }
 
 @font-face {
@@ -13,7 +14,7 @@
 }
 @font-face {
     font-family: InterTight;
-    src: url('..fonts/InterTight.ttf');
+    src: url('../fonts/InterTight.ttf');
     font-optical-sizing: auto;
     font-weight: 100 900;
     font-size: normal;
@@ -77,7 +78,7 @@ header {
       z-index: 1001;
   
       span {
-        background-color: #333;
+        background-color: teal;
         border-radius: 2px;
         display: block;
         height: 3px;
@@ -102,7 +103,7 @@ header {
   }
   
   nav {
-    background: #f1f1f1;
+    background: lightcyan;
     height: 100vh;
     width: 18.75rem;
   
@@ -115,7 +116,7 @@ header {
         margin-bottom: 1rem;
   
         a {
-          color: #333;
+          color: black;
           text-decoration: none;
         }
       }
