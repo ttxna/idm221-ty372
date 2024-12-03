@@ -12,6 +12,11 @@
     font-weight: 100 900;
     font-size: normal;
 }
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 h1{
     font-size: 2rem;
