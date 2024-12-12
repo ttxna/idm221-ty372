@@ -30,18 +30,7 @@ img {
     height: auto;
     display: block;
 }
-.hero-img{
-    max-width: 100%
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-  gap: 10px; 
-}
-.grid-item img {
-    width: 100%; 
-    height: auto; 
-}
+
 h1 {
   font-family: InterTight;
   font-size: 2.5rem;
@@ -49,9 +38,12 @@ h1 {
 }
 h2{
   color: #09514D;
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 
 h3 {
+  padding-top: 20px;
   font-family: InterTight;
   text-decoration: none;
   color: #117C76;
@@ -60,41 +52,9 @@ h3 {
 h4{
   font-family: InterTight;
   text-decoration: none;
-  padding-bottom: 20px;
   color: rgb(42, 42, 42);
 }
-.no-deco{
-  text-decoration: none;
-}
-.hero-img{
-padding-bottom: 32px;
-}
 
-
-.contain{
-  padding-left: 16px;
-  padding-right: 16px;
-  text-decoration: none;
-  color: black;
-  margin-top: 0;
-}
-
-.header{
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-
-.subheader{
-text-decoration: none;
-}
-
-.line{
-    height: 5px;
-    background-color: #09514D;
-    width: 20%;
-    margin: 60px auto;
-}
 header {
     padding: 1rem;
     position: relative;
@@ -179,17 +139,64 @@ header {
     transform: rotate(-45deg);
   }
  
+.hero-img{
+    max-width: 100%
+}
+.email{
+  margin: 0;
+  padding-top: 12px;
+}
+.no-deco{
+  text-decoration: none;
+}
+.hero-img{
+padding-bottom: 32px;
+}
+.spacing{
+  padding-top: 20px;
+}
+.spacing2{
+  padding: 0;
+  margin-bottom: 0;
+}
+.spacing3{
+  padding-bottom: 20px;
+}
+.spacing4{
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+.contain{
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
+  margin-top: 0;
+}
+
+.subheader{
+text-decoration: none;
+}
+
+.line{
+    height: 5px;
+    background-color: #09514D;
+    width: 20%;
+    margin: 60px auto;
+}
   .footer ul{
     background: rgb(251, 222, 226);
     font-family: Inter;
     text-decoration: none;
     list-style: none;
     text-align: center; 
-    padding: 20px 10px; 
+    padding: 50px 10px; 
     font-size: 16px; 
+  
   }
   .footer ul li {
-    margin: 10px 0;
+    margin: 15px 0;
   }
   .footer a {
     text-decoration: none; 
